@@ -1,0 +1,1259 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Lato Light", sans-serif;
+    line-height: 130%;
+}
+
+.container {
+    position: relative;
+    min-height: 100%;
+    min-width: 800px;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1, h2, h3, p, ul, button, input, body, .container, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*fonts*/
+@font-face {
+    font-family: "Lato Black";
+    src: url("../fonts/Lato-Black.eot?") format("eot"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black.svg#Lato-Black") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url("../fonts/Lato-Light.eot?") format("eot"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.ttf") format("truetype"), url("../fonts/Lato-Light.svg#Lato-Light") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato Hairline";
+    src: url("../fonts/Lato-Hairline.eot?") format("eot"), url("../fonts/Lato-Hairline.woff") format("woff"), url("../fonts/Lato-Hairline.ttf") format("truetype"), url("../fonts/Lato-Hairline.svg#Lato-Hairline") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../fonts/lato-bold-webfont.eot");
+    src: url("../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff"), url("../fonts/lato-bold-webfont.ttf") format("truetype"), url("../fonts/lato-bold-webfont.svg#latobold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Thin";
+    src: url("../fonts/HelveticaNeueThn.eot?") format("eot"), url("../fonts/HelveticaNeueThn.woff") format("woff"), url("../fonts/HelveticaNeueThn.ttf") format("truetype"), url("../fonts/HelveticaNeueThn.svg#HelveNueThin") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Bold";
+    src: url("../fonts/helveticaneuebold-webfont.eot");
+    src: url("../fonts/helveticaneuebold-webfont.eot") format("embedded-opentype"), url("../fonts/helveticaneuebold-webfont.woff2") format("woff2"), url("../fonts/helveticaneuebold-webfont.woff") format("woff"), url("../fonts/helveticaneuebold-webfont.ttf") format("truetype"), url("../fonts/helveticaneuebold-webfont.svg#HelveticaNeueBold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato Bold Italic";
+    src: url("../fonts/lato-bolditalic-webfont.eot");
+    src: url("../fonts/lato-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bolditalic-webfont.woff2") format("woff2"), url("../fonts/lato-bolditalic-webfont.woff") format("woff"), url("../fonts/lato-bolditalic-webfont.ttf") format("truetype"), url("../fonts/lato-bolditalic-webfont.svg#latobold_italic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Lato Light Italic";
+    src: url("../fonts/lato-lightitalic-webfont.eot");
+    src: url("../fonts/lato-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-lightitalic-webfont.woff2") format("woff2"), url("../fonts/lato-lightitalic-webfont.woff") format("woff"), url("../fonts/lato-lightitalic-webfont.ttf") format("truetype"), url("../fonts/lato-lightitalic-webfont.svg#latolight_italic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.page {
+    margin-top: 20px;
+}
+
+/* styles for header*/
+.header {
+    position: fixed !important;
+    width: 100%;
+    min-width: 800px;
+    height: 194px;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.97);
+}
+
+.header .wrapper {
+    height: 194px;
+
+}
+
+.wrapper-header {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 297px;
+    z-index: 999;
+    padding-top: 25px;
+
+}
+
+.top-menu {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.top-menu div {
+    float: left;
+    text-align: left;
+    position: relative;
+}
+
+#home {
+    width: 15.1111111111%
+}
+
+#magazine {
+    width: 18.6666666667%;
+}
+
+#product {
+    width: 18%;
+}
+
+#community {
+    width: 20.4444444444%;
+}
+
+#about {
+    width: 15.7777777778%;
+}
+
+#search-field {
+    position: relative;
+    width: 12%;
+}
+
+#search-input {
+    float: right;
+    height: 13px;
+    width: 100%;
+    border: 1px solid #4a4a4c;
+    border-radius: 1px 0 0 1px;
+    vertical-align: top;
+}
+
+#search_button {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 17px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 0 1px 1px 0;
+    border: none;
+    background: #000 url("../img/search-icon.png") no-repeat center;
+}
+
+.top-menu a {
+    position: relative;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Lato Black", sans-serif;
+}
+
+.top-menu a:hover {
+    color: #9a3542;
+}
+
+.top-menu div:hover > ul {
+    display: block;
+}
+
+.drop-down {
+    top: 15px;
+    left: -8%;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    padding: 35px 0 5px 8%;
+    background: rgba(255, 255, 255, .97);
+    width: 75%;
+}
+
+.drop-down a {
+    text-transform: none;
+    font-size: 12px;
+    font-family: "Lato Light", sans-serif;
+    color: #000;
+    height: 26px;
+    display: block;
+}
+
+.top-menu a.active {
+    color: #9a3542;
+}
+
+/* styles for header on-scroll*/
+.animated {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 0px;
+}
+
+.on-scroll .header, .on-scroll .header .wrapper, .wrapper-header {
+    height: 85px;
+}
+
+.on-scroll .drop-down {
+    top: 18px;
+}
+
+.on-scroll .main {
+    padding-top: 85px;
+}
+
+.on-scroll .logo {
+    -ms-transform: perspective(1px) scale(0.5454) translateY(-55px);
+    -webkit-transform: perspective(1px) scale(0.5454) translateY(-55px);
+    -o-transform: scale(0.5454) translateY(-55px);
+    transform: perspective(1px) scale(0.5454) translateY(-55px);
+}
+
+.on-scroll .top-menu {
+    -ms-transform: translateY(-116px);
+    -webkit-transform: translateY(-116px);
+    transform: translateY(-116px);
+}
+
+.on-scroll #magazine {
+    left: -4%;
+}
+
+.on-scroll #product {
+    left: -7%;
+}
+
+.on-scroll #community {
+    left: 13%;
+}
+
+.on-scroll #about {
+    left: 9%;
+}
+
+.on-scroll #search-input {
+    width: 60%;
+}
+
+/* styles for footer*/
+.footer {
+    position: absolute;
+    height: 155px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-main {
+    border-top: 1px solid #E6E6E6;
+}
+
+.footer-block {
+    float: left;
+    width: 32.2%;
+    vertical-align: top;
+    margin-right: 1.695%;
+}
+
+.footer-block:last-of-type {
+    margin-right: 0;
+}
+
+.footer-block h3 {
+    color: #4a4a4c;
+    margin: 12px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Lato Bold", sans-serif;
+
+}
+
+.more-info ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.column-2 {
+    margin-left: 20%;
+}
+
+.footer-block a, .sign-up-form label {
+    color: #808184;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Lato Light", sans-serif;
+}
+
+.footer-block a:hover {
+    color: #000;
+}
+
+.sign-up-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#sign-up-input {
+    border: 1px solid #b0b2b3;
+    border-radius: 1px;
+    width: 65%;
+    height: 25px;
+    vertical-align: top;
+}
+
+#sign-up-input::-webkit-input-placeholder {
+    color: #808184;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Lato Light", sans-serif;
+    padding-left: 10px;
+    line-height: 100%;
+}
+
+#sign-up-input::-moz-placeholder {
+    color: #808184;
+    opacity: 1;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Lato Light", sans-serif;
+    padding-left: 10px;
+    line-height: 100%;
+}
+
+#sign-up-input:-ms-input-placeholder {
+    color: #808184;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Lato Light", sans-serif;
+    padding-left: 10px;
+    line-height: 100%;
+}
+
+#sign-up-btn {
+    height: 27px;
+    width: 44px;
+    border: 1px solid #b0b2b3;
+    color: #fff;
+    background-color: #898b8d;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Lato Light", sans-serif;
+    text-transform: uppercase;
+}
+
+.find-us li {
+    width: 10%;
+    max-width: 30px;
+    display: inline-block;
+    margin-right: 3.5%;
+    margin-top: 22px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info p {
+    color: #6d6e70;
+    font-size: 10px;
+    font-family: "Lato Hairline", sans-serif;
+    margin: 5px 0;
+}
+
+/*styles for the main container*/
+.main {
+    padding: 193px 0 190px 0;
+}
+
+/*styles for slide-show*/
+.slide-show {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
+
+.stretching img {
+    max-width: 100%;
+}
+
+.slide-show img {
+    width: 100%;
+}
+
+.flex-previous {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -34px;
+}
+
+.flex-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -34px;
+}
+
+/*styles for article-preview on home-page*/
+.main-column {
+    float: left;
+    width: 65.8%;
+}
+
+.article-preview {
+    padding: 15px 0;
+}
+
+.article-text {
+    position: relative;
+    width: 46%;
+    float: left;
+}
+
+.grey-border {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.article-heading {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: "Helvetica Neue Bold", sans-serif;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+time {
+    font-size: 12px;
+    font-family: "Lato Light", sans-serif;
+    display: block;
+
+}
+
+.article-preview time {
+    margin-bottom: 33px;
+}
+
+.category {
+    font-family: "Lato Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.bold {
+    font-family: "Lato Bold", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+.article-image {
+    position: relative;
+    float: left;
+    margin-right: 2%;
+    width: 52%;
+    max-width: 380px;
+}
+
+.logo-home {
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 12%;
+    max-width: 34px;
+}
+
+.magazine-article .infographic {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.infographic div {
+    display: inline-block;
+    margin-right: 8px;
+    height: 26px;
+    width: 26px;
+}
+
+.article-preview .infographic div {
+    margin-top: 10.5%;
+}
+
+.yellow {
+    background-color: #ffd25b;
+}
+
+.red {
+    background-color: #ac3714;
+}
+
+.green {
+    background-color: #588165;
+}
+
+/* styles for aside left block*/
+.left {
+    float: left;
+    width: 32.2%;
+    margin-top: 20px;
+    margin-right: 2%;
+}
+
+.left section {
+    padding: 14px 0;
+}
+
+/* styles for right block*/
+.right {
+    float: left;
+    width: 32.2%;
+    margin-left: 2%;
+}
+
+.right section {
+    padding: 14px 0;
+}
+
+.right h1 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Lato Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+/*styles for HIGHLIGHTS block*/
+
+.highlights {
+    padding: 12px 0;
+}
+
+.highlights-image {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    max-width: 186px;
+    max-height: 110px;
+}
+
+.highlights-text {
+    float: left;
+    width: 50%;
+}
+
+.highlights h1 {
+    padding-bottom: 10px;
+}
+
+.highlights li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ul.highlights li:last-child {
+    margin-bottom: 0;
+}
+
+.highlights h2 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Helvetica Neue Bold", sans-serif;
+    margin-bottom: 10px;
+}
+
+.category-small {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Lato Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.highlights p {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Lato Light", sans-serif;
+}
+
+/*styles for commercial block*/
+.commercial {
+    width: 100%;
+}
+
+.commercial img {
+    width: 100%;
+}
+
+/*styles for found-partner block*/
+.found-partner h1 {
+    background-color: #E6E6E6;
+    padding: 8px 3% 8px 3%;
+    width: 94%;
+}
+
+.found-partner div img {
+    width: 42%;
+    float: left;
+    padding: 0px 4% 20px 4%;
+    background-color: #E6E6E6;
+}
+
+/*styles for MAGAZINE page*/
+/*styles for page-illustration*/
+.page.magazine {
+    margin-top: 40px;
+}
+
+.page-illustration {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.page-chapter {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.page-chapter h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+    font-family: "Helvetica Neue Bold", sans-serif;
+
+}
+
+.page-chapter span {
+    font-size: 45px;
+    font-weight: normal;
+    font-family: "Helvetica Neue Thin", sans-serif;
+
+}
+
+.page-chapter h2 {
+    font-size: 25px;
+    font-weight: normal;
+    font-family: "Helvetica Neue Thin", sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+/*styles for magazine article-preview*/
+
+.three-cols a {
+    float: left;
+    width: 31.33%;
+    margin-right: 3%;
+}
+
+.three-cols a:last-child {
+    margin-right: 0;
+}
+
+.magazine-article {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.magazine-article h1 {
+    font-size: 32px;
+    font-weigt: normal;
+    font-family: "Helvetica Neue Bold", sans-serif;
+    margin-bottom: 10px;
+}
+
+.magazine-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.magazine-image img {
+    position: relative;
+}
+
+.logo-magazine {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+
+}
+
+/*styles for newspage*/
+.pagination {
+    text-align: center;
+    color: #808184;
+    font-family: "Lato Light", sans-serif;
+    margin: 50px 0 15px 0;
+}
+
+.pagination a {
+    color: #808184;
+    padding: 3px;
+}
+
+.pagination a:hover {
+    color: black;
+}
+
+.pagination a.active {
+    color: black;
+}
+
+/*styles for partner-page*/
+.partnerpage .found-partner {
+    margin-top: 178px;
+}
+
+.partner-logo {
+    width: 46%;
+    height: 154px;
+    border: 1px solid #808184;
+    position: relative;
+    margin: 10px 4% 25px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.partner-info {
+    width: 48%;
+    display: inline-block;
+    margin: 10px 2% 25px 0;
+    vertical-align: top;
+}
+
+.bottom-space {
+    margin-bottom: 15px;
+}
+
+.grey {
+    color: #808184;
+}
+
+.partner-logo img {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+.two-cols div {
+    width: 48.5%;
+    float: left;
+    margin-right: 3%;
+}
+
+.two-cols div:last-child {
+    margin-right: 0;
+}
+
+/*styles for essay*/
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.page-heading {
+    font-size: 32px;
+    font-weigt: normal;
+    font-family: "Helvetica Neue Bold", sans-serif;
+    margin-top: 40px;
+}
+
+.essay p {
+    padding-bottom: 15px;
+}
+
+.essay img {
+    margin: 20px 0 30px 0;
+}
+
+.grey-border-small {
+    width: 38px;
+    border-top: 1px solid #E6E6E6;
+    margin: 0 auto;
+}
+
+.centered-image {
+    width: 45%;
+    margin: 0 auto;
+}
+
+/*styles for newsarticle page*/
+
+.article-big p {
+    margin-bottom: 20px;
+}
+
+.red-text {
+    color: #9a3542;
+}
+
+.infographic-big div {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.infographic-big div:last-child {
+    margin-right: 0px;
+}
+
+.infographic-big img {
+    margin-top: 0;
+}
+
+.newsarticle .found-partner {
+    margin-top: 168px;
+}
+
+/*styles for comments block*/
+.comments {
+    margin-top: 10%;
+}
+
+.comments p {
+    margin-bottom: 10px;
+}
+
+.sorting {
+    margin-top: 10px;
+    margin-bottom: 36px;
+    vertical-align: top;
+}
+
+.sorting a {
+    color: #999;
+}
+
+.sorting img {
+    padding: 0 0 2px 6px;
+}
+
+#comment {
+    border: 1px solid #E6E6E6;
+    width: 85%;
+    Height: 46px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    resize: none;
+    overflow: hidden;
+}
+
+#comment-input::-webkit-input-placeholder {
+    color: #999;
+    font-size: 14px;
+    font-family: "Lato Light", sans-serif;
+    padding-left: 15px;
+    padding-top: 11px;
+
+}
+
+#comment-input::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+    font-size: 14px;
+    font-family: "Lato Light", sans-serif;
+    padding-left: 15px;
+    padding-top: 11px;
+
+}
+
+#comment-input:-ms-input-placeholder {
+    color: #999;
+    font-size: 14px;
+    font-family: "Lato Light", sans-serif;
+    padding-left: 15px;
+    padding-top: 11px;
+
+}
+
+.profile-photo {
+    position: relative;
+    display: inline-block;
+    width: 9%;
+    vertical-align: top;
+    margin-right: 1%;
+}
+
+.comment-field {
+    display: inline-block;
+    width: 90%;
+    position: relative;
+}
+
+.comment-field label {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    padding: 14px;
+}
+
+#profile-image {
+    left: -9999px;
+    position: absolute;
+}
+
+#join-btn {
+    position: absolute;
+    background-color: #E6E6E6;
+    width: 14.3%;
+    margin-left: 0.7%;
+    height: 46px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Lato Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+/*styles for about us mission */
+.one-third {
+    width: 32.2%;
+}
+
+.about-us-text {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cite {
+    font-size: 25px;
+    font-weight: normal;
+    font-family: "Lato Bold", sans-serif;
+    margin-bottom: 40px;
+}
+
+.about-us-text div {
+    margin-bottom: 22px;
+}
+
+/*styles for About Us Team page*/
+.team-gallery {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.team-gallery-row {
+    width: 100%;
+}
+
+.team-gallery-row div {
+    width: 23.75%;
+    position: relative;
+    float: left;
+    margin: 0 1.66666666666667% 1.66666666666667% 0;
+}
+
+.team-gallery div:last-child {
+    margin-right: 0;
+}
+
+.team-gallery img {
+    max-width: 100%;
+}
+
+.page-heading span {
+    font-size: 32px;
+    font-family: "Helvetica Neue Thin", sans-serif;
+}
+
+.team {
+    width: 54%;
+    margin: 0 auto;
+}
+
+.team .page-heading {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.caption {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    padding: 15px;
+}
+
+/*styles for Product page*/
+.product img {
+    margin-top: 30px;
+}
+
+.product-text {
+    margin-top: 30px;
+}
+
+.product-name {
+    margin-top: 58px;
+}
+
+.buy-link {
+    margin: 12px 0;
+}
+
+.buy-link a {
+    font-size: 14px;
+    font-family: "Helvetica Neue Thin"
+
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 3%;
+    margin-bottom: 10px;
+    width: 9.5%;
+    max-width: 30px;
+}
+
+.social-links h3 {
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    max-width: 100%;
+
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links img {
+    margin-top: 0;
+}
+
+/* styles for community-gallery*/
+
+.community {
+    min-width: 1200px;
+}
+
+.gallery {
+    margin-top: 50px;
+}
+
+.gallery div {
+    float: left;
+}
+
+.gallery div div {
+    float: left;
+}
+
+.gallery img {
+    max-width: 100%;
+
+}
+
+.one-third-left {
+    width: 48.7141%;
+    margin-right: 2.5718%;
+}
+
+.one-third-right {
+    width: 48.7141%;
+}
+
+.gallery .one-third {
+    float: left;
+    margin-bottom: 1.7%;
+}
+
+.gallery .left {
+    margin-right: 1.7%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gallery .left div, .gallery .right div {
+    margin-bottom: 5.2826%;
+}
+
+.gallery .right {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.7%;
+}
+
+.gallery .main-column {
+    width: 66.1%
+}
+
+.gallery .main-column div {
+    margin-bottom: 2.5718%;
+}
+
+.one-height {
+    max-height: 386px;
+    position: relative;
+}
+
+.two-height {
+    max-height: 792px;
+    position: relative;
+}
+
+.logo-gallery {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -34px;
+    z-index: 3;
+}
+
+.two-height .logo-gallery {
+    top: 25%;
+}
+
+.black {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.community-text {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 68%;
+    height: 100%;
+    color: #fff;
+    z-index: 9;
+}
+
+.two-height .community-text {
+    top: 10%;
+}
+
+.two-thirds .community-text {
+    left: 10%;
+    width: 33%;
+}
+
+.community-text time {
+    margin-bottom: 8.6%;
+}
+
+.two-thirds .community-text time {
+    margin-bottom: 8.6%;
+}
+
+.read-more {
+    padding: 0 4px 1px 0;
+}
+
+/* styles for article page*/
+
+.article .page {
+    margin-top: 3.33%;
+}
+
+.article .commercial {
+    padding: 0;
+}
+
+.article .social-links {
+    margin-top: 20.7254%;
+}
+
+.article-quotation {
+    font-size: 28px;
+    font-weight: normal;
+    font-family: "Lato Bold Italic", sans-serif;
+    width: 35%;
+
+}
+
+.article-quotation p {
+    margin-bottom: 0;
+    line-height: 130%;
+}
+
+.article-quotation footer {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Lato Light Italic", sans-serif;
+    margin-top: 10px;
+}
+
+.article .centered-image, .article .two-cols, .article .full-width, .article-quotation {
+    margin-top: 5.833%;
+    margin-bottom: 5.833%;
+}
